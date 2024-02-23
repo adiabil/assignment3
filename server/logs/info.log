@@ -328,3 +328,7 @@ info: All sessions found {"timestamp":"2024-02-23 14:02:57"}
 info: Server is running on http://localhost:8080 {"timestamp":"2024-02-23 15:02:30"}
 error: sessions not found {"timestamp":"2024-02-23 15:02:22"}
 info: All sessions found {"timestamp":"2024-02-23 15:02:22"}
+error: sessions not found {"timestamp":"2024-02-23 15:02:11"}
+info: All sessions found {"timestamp":"2024-02-23 15:02:11"}
+error: sessions not found {"timestamp":"2024-02-23 16:02:70"}
+info: All sessions found {"timestamp":"2024-02-23 16:02:70"}
