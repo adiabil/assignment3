@@ -13,6 +13,18 @@ export const getAllSessions = async () => {
   }
 };
 
+export const getSessionById = async ({id}) => {
+  try {
+    const res = await fetch(`${URL}/${id}`);
+    const data = await res.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+}
+
 export const createSession = async (session) => {
   try {
     const res = await fetch(URL, {
@@ -66,17 +78,5 @@ export const updateSession = async ({ id, ...session }) => {
   } catch (error) {
     console.log(error);
     alert(`error while updating session:\n\n${res.status} ${data.message}`);
-  }
-}
-
-export const getSessionById = async ({id}) => {
-  try {
-    const res = await fetch(`${URL}/${id}`);
-    const data = await res.json();
-    console.log(data);
-    return data;
-  } catch (error) {
-    console.log(error);
-    throw error;
   }
 }
