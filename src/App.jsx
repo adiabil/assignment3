@@ -10,32 +10,29 @@ function App() {
   const { state, dispatch } = useContext(SessionContext);
   const [searchId, setSearchId] = useState("");
   const { items } = state;
-  // const [ search, setSearch]  = useState("");
-  // const handleSearch = async ()
   const handleClick = async () => {
     const data = await getAllSessions();
     dispatch({ type: "SET_SESSIONS", payload: data });
   };
 
   const fetchById = async () => {
+    if(searchId==="") return;
+    try{
     const data = await getSessionById({
       id: searchId,
     });
+  }catch(err){
+    console.log(err);
+  }
     console.log(data);
     dispatch({ type: "SET_SESSIONS", payload: [data] });
   };
-
-  // const handleClick2 = async () => {
-  //   const data = await getSessionById();
-  //   dispatch({ type: "SET_SESSIONS", payload: data });
-  // };
 
   return (
     <Box className="App">
       <CssBaseline />
       <header>
         <h1>Session Manager</h1>
-        {/* <Button onClick={handleClick} variant="contained" sx={{ textTransform: "none"}}>Search</Button> */}
         <Button
           onClick={handleClick}
           variant="contained"

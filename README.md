@@ -10,7 +10,7 @@ This project is a full-stack web service designed to manage Criss Managment Syst
 - **React**: Powers the front-end user interface, located in the Client folder.
 - **Vite**: Utilized for a faster development server, improved hot-reloading, and support for modern JavaScript features.
 - **CORS**: Enables cross-origin requests to the API.
-
+- **Axios**: Simplifies HTTP requests between the front end and back end.
 
 ## Installation
 

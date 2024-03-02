@@ -1,4 +1,3 @@
-import axios from 'axios';
 const URL = 'https://session-service-pema.onrender.com/counselingSession';
 
 export const getAllSessions = async () => {
