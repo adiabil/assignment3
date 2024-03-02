@@ -20,7 +20,6 @@ const Modal = () => {
             justifyContent: "center",
             marginTop: "10px",
           }}>
-
         </div>
       </div>
     </div>

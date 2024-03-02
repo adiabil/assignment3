@@ -8,17 +8,6 @@ import EditIcon from '@mui/icons-material/Edit';
 
 export default function DataTable() {
   const { state, dispatch } = React.useContext(SessionContext);
-  // const handleSearch = async ({ id }) => {
-  //   const result = await getSessionById({
-  //     id,
-  //   });
-  //   if (result.message) {
-  //     alert(result.message);
-  //   } else {
-  //     dispatch({ type: "SET_SESSION", payload: result });
-  //   }
-  // }
-
   const handelDelete = async ({ id }) => {
     const result = await deleteSession({
       id,
@@ -109,8 +98,6 @@ export default function DataTable() {
               onClick={() => {
                 dispatch({ type: "SET_SELECTED", payload: params.row });
                 handelDelete({ id: params.row.id });
-                // dispatch({ type: "", payload: false });
-                // handleSearch({ id: 10});
               }}>
               Delete
             </Button>

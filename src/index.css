@@ -6,7 +6,6 @@
 
 :root {
   font-size: 16px;
-  /* colors pallet: */
   --color-main-bg: #000000;
   --color-primary: #603e9f;
   --color-secondary: #382c58;
@@ -33,14 +32,13 @@ header {
     font-size: 2rem;
     background: linear-gradient(
       to right,
-      #ff8c00,
-      #ffd700
+      #010101,
+      #000000
     ); 
     -webkit-background-clip: text;
     color: transparent; 
   }
 }
-
 .cards_container {
   background-color: transparent;
   padding: 10px;
